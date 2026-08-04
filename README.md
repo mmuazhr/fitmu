@@ -47,8 +47,8 @@ sudo gem install cocoapods
 cd fitmu/mobile
 
 # Copy and fill in your keys
-cp .env .env.local
-# Edit .env: add SUPABASE_URL and SUPABASE_ANON_KEY
+cp .env.example .env
+# Edit .env: set EXPO_PUBLIC_SUPABASE_URL and EXPO_PUBLIC_SUPABASE_ANON_KEY
 
 # Install iOS pods
 npx expo install
