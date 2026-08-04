@@ -1,0 +1,52 @@
+# Secrets — mobile/.env holds the live Supabase URL + anon key
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p8
+*.p12
+*.jks
+*.mobileprovision
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Expo / React Native
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+.metro-health-check*
+*.orig.*
+.kotlin/
+
+# Generated native projects — regenerate with `expo prebuild`
+/mobile/ios/
+/mobile/android/
+
+# Agent / tool config (local only)
+.claude/
+.superpowers/
+
+# Supabase CLI local link state (contains project + org refs)
+supabase/.temp/
+supabase/.branches/
+
+# Local databases
+*.db
+*.sqlite
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.log
+
+# macOS
+.DS_Store

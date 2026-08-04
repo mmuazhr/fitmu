@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "fitmu",
+    "slug": "fitmu",
+    "version": "1.0.0",
+    "scheme": "fitmu",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0f172a"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.muaz.fitmu",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSHealthShareUsageDescription": "fitmu reads your steps and calories to track daily activity.",
+        "NSHealthUpdateUsageDescription": "fitmu saves your workouts to Apple Health.",
+        "NSLocationWhenInUseUsageDescription": "fitmu uses your location to suggest nearby food options."
+      },
+      "entitlements": {
+        "com.apple.developer.healthkit": true,
+        "com.apple.developer.healthkit.access": []
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0f172a"
+      },
+      "package": "com.muaz.fitmu"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#22c55e"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
